@@ -4,7 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#define MAX_LEN 32
+#define MAX_LEN 256
 #define PASSWORD_LEN 16
 
 char hash(int num1, int num2);
@@ -28,6 +28,7 @@ int main()
     int currentStationSize = strlen(currentStation);
     getPassword(rootPassword, rootPasswordSize, currentStation, currentStationSize, password);
     printf("\nPASSWORD: %s\n\n", password);
+    system("pause");
     return 0;
 }
 
